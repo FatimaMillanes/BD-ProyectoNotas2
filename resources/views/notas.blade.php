@@ -11,7 +11,7 @@
                         <h4>{{ $nota->titulo }}</h4>
 
                         <p>
-                            {{!! $nota->contenido !!}}<!--@todo sanitizar HTML para evitar ataque XSS*}-->
+                            {!! $nota->contenido !!}<!--@todo sanitizar HTML para evitar ataque XSS*}-->
                         </p>
                     </div>
 
