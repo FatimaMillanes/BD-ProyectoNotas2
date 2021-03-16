@@ -16,9 +16,7 @@ use Illuminate\Http\Request;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'App\Http\Controllers\NotasController@welcome' );
 
 Route::get('notas', 'App\Http\Controllers\NotasController@index')->name('notas.index');
 
@@ -27,3 +25,6 @@ Route::get('agregar', 'App\Http\Controllers\NotasController@agregar');
 Route::post('crear', 'App\Http\Controllers\NotasController@crear')->name('notas.store');
 
 Route::get('notas/{id}/editar', 'App\Http\Controllers\NotasController@editar')->name('notas.edit');
+
+Route::put('notas/{notas}/editar', 'App\Http\Controllers\NotasController@update')->name('notas.update');
+
