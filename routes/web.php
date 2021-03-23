@@ -28,3 +28,4 @@ Route::get('notas/{id}/editar', 'App\Http\Controllers\NotasController@editar')->
 
 Route::put('notas/{notas}/editar', 'App\Http\Controllers\NotasController@update')->name('notas.update');
 
+Route:: delete('notas/{id}', 'App\Http\Controllers\NotasController@destroy')->name('notas.destroy');
